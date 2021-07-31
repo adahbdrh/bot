@@ -571,7 +571,7 @@ module.exports = async(xinz, msg, blocked, baterai, _afk, welcome, left) => {
                 if (args.length < 2) return reply(`Kirim perintah *${prefix}ttp* teks`)
                 let ane = await getBuffer(`https://api.xteam.xyz/ttp?file&text=${encodeURIComponent(q)}`)
                 fs.writeFileSync('./sticker/ttp.webp', ane)
-                exec(`webpmux -set exif ./sticker/data.exif ./sticker/ttp.webp -o ./sticker/attp.webp`, async (error) => {
+                exec(`webpmux -set exif ./sticker/data.exif ./sticker/ttp.webp -o ./sticker/ttp.webp`, async (error) => {
                     if (error) return reply(mess.error.api)
                     xinz.sendMessage(from, fs.readFileSync(`./sticker/ttp.webp`), sticker, {quoted: msg})
                     limitAdd(sender, limit)
