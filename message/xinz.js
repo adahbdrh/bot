@@ -876,7 +876,7 @@ module.exports = async(xinz, msg, blocked, baterai, _afk, welcome, left) => {
                         const { dl_link, thumb, title, filesizeF, filesize } = res
                         axios.get(`https://kydah.my.id/app/redirect/api.php?url=${dl_link}`)
                         .then((a) => {
-                            if (Number(filesize) >= 40000) return sendFileFromUrl(from, thumb, `---[ *YTMP4 DOWNLOADER* ]---
+                             return sendFileFromUrl(from, thumb, `---[ *YTMP4 DOWNLOADER* ]---
 \`\`\`Title : ${title}\`\`\`
 \`\`\`Ext : MP4\`\`\`
 \`\`\`Filesize : ${filesizeF}\`\`\`
@@ -904,7 +904,7 @@ module.exports = async(xinz, msg, blocked, baterai, _afk, welcome, left) => {
                         const { dl_link, thumb, title, filesizeF, filesize } = res
                         axios.get(`https://kydah.my.id/app/redirect/api.php?url=${dl_link}`)
                         .then((a) => {
-                            if (Number(filesize) >= 30000) return sendFileFromUrl(from, thumb, `---[ *YTMP3 DOWNLOADER* ]---
+                             return sendFileFromUrl(from, thumb, `---[ *YTMP3 DOWNLOADER* ]---
 \`\`\`Title : ${title}
 \`\`\`Ext : MP3
 \`\`\`Filesize : ${filesizeF}
@@ -931,7 +931,7 @@ module.exports = async(xinz, msg, blocked, baterai, _afk, welcome, left) => {
                         const { dl_link, thumb, title, filesizeF, filesize } = res
                         axios.get(`https://kydah.my.id/app/redirect/api.php?url=${dl_link}`)
                         .then((a) => {
-                            if (Number(filesize) >= 40000) return sendFileFromUrl(from, thumb, `---[ *PLAY YTMP4* ]---
+                             return sendFileFromUrl(from, thumb, `---[ *PLAY YTMP4* ]---
 \`\`\`Title : ${title}\`\`\`
 \`\`\`Ext : MP4\`\`\`
 \`\`\`Filesize : ${filesizeF}\`\`\`
@@ -962,7 +962,7 @@ module.exports = async(xinz, msg, blocked, baterai, _afk, welcome, left) => {
                         const { dl_link, thumb, title, filesizeF, filesize } = res
                         axios.get(`https://kydah.my.id/app/redirect/api.php?url=${dl_link}`)
                         .then((a) => {
-                            if (Number(filesize) >= 30000) return sendFileFromUrl(from, thumb, `---[ *PLAY YTMP3* ]---
+                             return sendFileFromUrl(from, thumb, `---[ *PLAY YTMP3* ]---
 \`\`\`Title : ${title}\`\`\`
 \`\`\`Ext : MP3\`\`\`
 \`\`\`Filesize : ${filesizeF}\`\`\`
