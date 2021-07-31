@@ -1314,7 +1314,7 @@ _Harap tunggu sebentar, media akan segera dikirim_`
                 if (isGame(sender, isOwner, gcount, glimit)) return reply(`Limit game kamu sudah habis`)
                 if (game.isTebakGambar(from, tebakgambar)) return reply(`Masih ada soal yang belum di selesaikan`)
                 let anu = await axios.get(`https://kydah.my.id/apis/v1/game/tebakgambar?apikey=${apikey}`)
-                const petunjuk = anu.data.jawaban.replace(/[b|c|d|f|g|h|j|k|l|m|n|p|q|r|s|t|v|w|x|y|z]/gi, '_')
+                const petunjuk = anu.data.petunjuk
                 sendFileFromUrl(from, anu.data.img, monospace(`Silahkan jawab soal berikut ini\n\nPetunjuk : ${petunjuk}\nWaktu : ${gamewaktu}s`), msg)
                 let anih = anu.data.jawaban.toLowerCase()
                 game.addgambar(from, anih, gamewaktu, tebakgambar)
