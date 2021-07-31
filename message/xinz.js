@@ -584,7 +584,7 @@ module.exports = async(xinz, msg, blocked, baterai, _afk, welcome, left) => {
                 if (args.length < 2) return reply(`Penggunaan :\n*${prefix}tinyurl link`)
                 if (!isUrl(args[1])) return reply(`Masukkan link yang benar`)
                 axios.get(`https://kydah.my.id/app/redirect/api.php?url=${args[1]}`)
-                .then((a) => reply(`Nih ${a.result}`))
+                .then((a) => reply(`Nih ${a.data.result}`))
                 .catch(() => reply(`Error, harap masukkan link dengan benar`))
                 break
             case prefix+'imgtourl':{
@@ -880,7 +880,7 @@ module.exports = async(xinz, msg, blocked, baterai, _afk, welcome, left) => {
 \`\`\`Title : ${title}\`\`\`
 \`\`\`Ext : MP4\`\`\`
 \`\`\`Filesize : ${filesizeF}\`\`\`
-\`\`\`Download : ${a.result}\`\`\` `, msg)
+\`\`\`Download : ${a.data.result}\`\`\` `, msg)
                             limitAdd(sender, limit)
                         })
                     })
@@ -908,7 +908,7 @@ module.exports = async(xinz, msg, blocked, baterai, _afk, welcome, left) => {
 \`\`\`Title : ${title}
 \`\`\`Ext : MP3
 \`\`\`Filesize : ${filesizeF}
-\`\`\`Download : ${a.result}`, msg)
+\`\`\`Download : ${a.data.result}`, msg)
                             limitAdd(sender, limit)
                         })
                     })
@@ -939,7 +939,7 @@ module.exports = async(xinz, msg, blocked, baterai, _afk, welcome, left) => {
 \`\`\`Upload : ${yut.videos[0].ago}\`\`\`
 \`\`\`Ditonton : ${yut.videos[0].views}\`\`\`
 \`\`\`Duration : ${yut.videos[0].timestamp}\`\`\`
-\`\`\`Link : ${a.result}\`\`\``, msg)
+\`\`\`Link : ${a.data.result}\`\`\``, msg)
                             limitAdd(sender, limit)
                         })
                     })
@@ -970,7 +970,7 @@ module.exports = async(xinz, msg, blocked, baterai, _afk, welcome, left) => {
 \`\`\`Upload : ${yut.videos[0].ago}\`\`\`
 \`\`\`Ditonton : ${yut.videos[0].views}\`\`\`
 \`\`\`Duration : ${yut.videos[0].timestamp}\`\`\`
-\`\`\`Link : ${a.result}\`\`\``, msg)
+\`\`\`Link : ${a.data.result}\`\`\``, msg)
                             limitAdd(sender, limit)
                         })
                     })
