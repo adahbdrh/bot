@@ -144,8 +144,8 @@ ${i.glimit} : Fitur yang memakai 1 limit game
 ${i.prem} : Fitur khusus premium user`
 }
 
-exports.newMenu = (ucapan, ownerName, botName, prefix, pendaftar, runtime, pushname, isOwner, isPremium, sisalimit, limitCount, glimit, gcount, expired, tanggal, jam) => {
-    return `---[ *${botName}* ]---
+exports.newMenu = (ownerName, botName, prefix, pendaftar, runtime, pushname, isOwner, isPremium, sisalimit, limitCount, glimit, gcount, expired, tanggal, jam) => {
+    return `---[ *UWLOH-HAWUK* ]---
 ──────────────────────
 ├ *Creator : ${ownerName}*
 ├ *Prefix :  ${prefix} *
