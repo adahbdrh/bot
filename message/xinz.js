@@ -1316,7 +1316,7 @@ _Harap tunggu sebentar, media akan segera dikirim_`
                 let anu = await axios.get(`https://kydah.my.id/apis/v1/game/tebakgambar?apikey=${apikey}`)
                 const petunjuk = anu.data.petunjuk
                 sendFileFromUrl(from, anu.data.img, monospace(`Silahkan jawab soal berikut ini\n\nPetunjuk : ${petunjuk}\nWaktu : ${gamewaktu}s`), msg)
-                let anih = anu.data.jawaban.toLowerCase()
+                let anih = anu.data.jawaban
                 game.addgambar(from, anih, gamewaktu, tebakgambar)
                 gameAdd(sender, glimit)
             }
