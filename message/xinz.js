@@ -237,7 +237,7 @@ module.exports = async(xinz, msg, blocked, baterai, _afk, welcome, left) => {
                         delCountKasar(sender, senbadword)
                     } else {
                         addCountKasar(sender, senbadword)
-                        reply(`Kamu terdeteksi berkata kasar\nJangan ulangi lagi atau kamu akan dikick`)
+                        reply(`Kamu terdeteksi berkata kasar\nJangan Kasar napa:(`)
                     }
                 }
             }
