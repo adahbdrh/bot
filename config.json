@@ -1,0 +1,24 @@
+{
+    "ownerNumber": "6281572885606@s.whatsapp.net",
+    "ownerName": "iuwkepow",
+    "limitCount": 30,
+    "gamewaktu": 60,
+    "botName": "UWLOH-HAWUK",
+    "pathImg": "./media/Itsuki.jpg",
+    "apikey": "NoobThePublic",
+    "fake": "UWLOH-CANGTIP",
+    "sesidInsta": "default",
+    "sessionName": "uwloh",
+    "txtDonasi": "Mau donasi? Gapapa donasi nya buat kamu aja, apalagi kamu jomblo? mending...... dahlah",
+    "gcount": {
+        "prem": 40,
+        "user": 20
+    },
+    "emote":{
+        "free": "◽",
+        "owner": "◾",
+        "limit": "🔸",
+        "glimit": "🔹",
+        "prem": "💰"
+    }
+}
